@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import Home from "./Components/Home";
+import Menu from "./Components/Menu";
+import Reservations from "./Components/Reservations";
+import Locations from "./Components/Locations";
+import data from "./data";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>App Component</h1>
+      <Link to="/reservations">Reservations Page</Link>
+      <Link to="/locations">Locations Page</Link>
+      <div>
+        {data.map((item, index) => {
+          return <Link to={`/menu/${index}`}>{item.name}</Link>;
+        })}
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu/:id" element={<Menu />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/locations" element={<Locations />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,7 @@
+CREATE TABLE client (
+    id SERIAL PRIMARY KEY UNIQUE NOT NULL,
+    firstName VARCHAR(40) NOT NULL,
+    lastName VARCHAR(40) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(80) NOT NULL
+)
