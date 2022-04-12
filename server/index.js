@@ -11,6 +11,9 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static(path.resolve(__dirname, "../build")));
 
+// get username from local storage if it exists
+const email = window.localStorage.getItem("email");
+
 // Endpoints here
 app.get("/api/profile", async (req, res) => {
   let profile = await sequelize.query(`

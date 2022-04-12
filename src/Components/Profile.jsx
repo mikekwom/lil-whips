@@ -21,8 +21,6 @@ function Profile() {
 
   return (
     <div>
-      <h2>{firstName ? firstName : "No First name..."}</h2>
-      <h3>{lastName ? lastName : "No Last name..."}</h3>
       <button onClick={accessDB}>Access Database</button>
     </div>
   );

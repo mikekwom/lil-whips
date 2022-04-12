@@ -2,7 +2,7 @@
   "name": "lilwhips",
   "version": "0.1.0",
   "private": true,
-  "main": "./server/index.js",
+  "main": "/server/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
