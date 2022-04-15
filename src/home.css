@@ -1,0 +1,129 @@
+.hero {
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../public/diner-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > button {
+  width: 120px;
+  height: 60px;
+  font-family: "ms madi";
+  font-weight: 700;
+  font-size: 20px;
+  color: #4b6a91;
+  background-color: #dff4ef;
+  line-height: 1;
+  border: solid 4px #4b6a91;
+  border-radius: 20px;
+}
+
+.hero > button:hover {
+  color: #dff4ef;
+  background-color: #4b6a91;
+  border-color: #dff4ef;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.logo-banner {
+  display: flex;
+  align-self: center;
+  margin: auto;
+  margin-top: -120px;
+  margin-bottom: -120px;
+  width: 100vw;
+  max-width: 900px;
+
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mid-section {
+  margin: 20px;
+  align-content: center;
+}
+
+.mid-section-container {
+  display: flex;
+}
+
+.mid-section-container-text > h3 {
+  font-size: 3.5vw;
+}
+
+.mid-section-container-text > h2 {
+  font-size: 6vw;
+  font-style: italic;
+  color: #c04d5a;
+}
+
+.mid-section-container-text {
+  display: block;
+  margin: auto;
+  line-height: 0%;
+}
+
+.mid-section > div:last-of-type {
+  justify-content: flex-end;
+}
+
+.mid-image {
+  width: 40vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}

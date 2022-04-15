@@ -9,15 +9,23 @@ import data from "./data";
 function App() {
   return (
     <div className="App">
-      <h1>App Component</h1>
-      <Link to="/reservations">Reservations Page</Link>
-      <Link to="/locations">Locations Page</Link>
-      <div>
-        {data.map((item, index) => {
-          return <Link to={`/menu/${index}`}>{item.name}</Link>;
-        })}
+      <div className="navbar">
+        <div className="logo">
+          <h2>Lil Whips</h2>
+          <h2>Creamery</h2>
+        </div>
+        <Link to="/menu" className="nav-item">
+          Menu
+        </Link>
+        <Link to="/reservations" className="nav-item">
+          Make a Reservation
+        </Link>
       </div>
-
+      {/* <div>
+          {data.map((item, index) => {
+            return <Link to={`/menu/${index}`}>{item.name}</Link>;
+          })}
+        </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu/:id" element={<Menu />} />
