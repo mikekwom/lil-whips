@@ -4,15 +4,17 @@ import Home from "./Components/Home";
 import Menu from "./Components/Menu";
 import Reservations from "./Components/Reservations";
 import Locations from "./Components/Locations";
-import data from "./data";
 
 function App() {
   return (
     <div className="App">
       <div className="navbar">
         <div className="logo">
-          <h2>Lil Whips</h2>
-          <h2>Creamery</h2>
+          <Link to="/" className="nav-item">
+            <h2>Lil Whips</h2>
+
+            <h2>Creamery</h2>
+          </Link>
         </div>
         <Link to="/menu" className="nav-item">
           Menu
@@ -28,7 +30,7 @@ function App() {
         </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu/:id" element={<Menu />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/reservations" element={<Reservations />} />
         <Route path="/locations" element={<Locations />} />
       </Routes>

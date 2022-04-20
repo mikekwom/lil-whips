@@ -1,0 +1,30 @@
+.menu {
+  margin: 20px;
+}
+
+.menu-container {
+  margin-bottom: 10px;
+  border: 4px #c04d5a solid;
+  border-radius: 20px;
+  background-color: #d9c7b8;
+}
+
+.menu-container > h3 {
+  margin-left: 20px;
+}
+
+.menu-items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.menu-item-card {
+  margin: 4px;
+  text-align: center;
+  border: 4px #c04d5a solid;
+  border-radius: 20px;
+  min-width: 150px;
+  min-height: 200px;
+}

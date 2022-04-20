@@ -1,8 +1,6 @@
-let data = [
-  { name: "Sundae", price: 4.99 },
-  { name: "Milk Shake", price: 5.99 },
-  { name: "One Scoop Cone", price: 2.99 },
-  { name: "Two Scoop Cone", price: 3.99 },
+export default [
+  { id: 1, name: "Mini Sliders", price: 6.99 },
+  { id: 2, name: "Onion Fries", price: 5.89 },
+  { id: 3, name: "Bottomless Fries", price: 2.99 },
+  { id: 4, name: "Mozzerela Sticks", price: 6.55 },
 ];
-
-export default data;
